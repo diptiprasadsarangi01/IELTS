@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+
+@layer components {
+  .primary-btn {
+    @apply inline-block bg-[#86b1be] text-white font-semibold rounded-lg duration-200 shadow-[0px_10px_8px_-7px_#91bbc8] hover:bg-[#e69067] hover:shadow-[0px_10px_8px_-7px_#e69067] py-2 px-6;
+  }
+}
+
+@layer utilities {
+  .drop-shadow {
+    filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5));
+  }
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "ui-sans-serif", sans-serif;
+    color: #2a2a2a;
+}
+
+.text-primary{
+    color: #86b1be;
+}
+.text-secondary{
+    color: #e69067;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem /* 16px */;
+    padding-left: 1rem /* 16px */;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+        padding-right: 2rem /* 32px */;
+        padding-left: 2rem /* 32px */;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        padding-right: 4rem /* 64px */;
+        padding-left: 4rem /* 64px */;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding-right: 5rem /* 80px */;
+        padding-left: 5rem /* 80px */;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+        padding-right: 6rem /* 96px */;
+        padding-left: 6rem /* 96px */;
+    }
+}
+
+/* Loder Page */
+.loader {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+}
+
+.loader:before {
+  content: '';
+  width: 48px;
+  height: 5px;
+  background: #55727b;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow324 0.5s linear infinite;
+}
+
+.loader:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #86b1be;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  animation: jump7456 0.5s linear infinite;
+}
+
+@keyframes jump7456 {
+  15% {
+    border-bottom-right-radius: 3px;
+  }
+
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+    transform: translateY(18px) scale(1, .9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow324 {
+
+  0%,
+    100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
