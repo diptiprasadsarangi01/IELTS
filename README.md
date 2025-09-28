@@ -35,5 +35,26 @@ Additional sections include:
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/diptiprasadsarangi01/IELTS.git
+```
+2. **Install dependencies:**
+```bash
+npm install
+```
+3. **Run the development server:**
+```bash
+npm run dev
+```
+4. **Build for production:**
+```bash
+npm run build
+```
+5. **Install React Icon:(optional)**
+```bash
+npm install react-icons
+```
+6. **Install Framer Motion:(optional)**
+```bash
+npm install framer-motion
+
+```
